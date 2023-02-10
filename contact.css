@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Karla&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header .containers {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding: 1%;
+  box-shadow: 5px 5px 5px 5px silver;
+  /* background-image: linear-gradient(to right, #95106d, #5f1782); */
+  background-color: white;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 2%;
+}
+
+li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+li a:hover {
+  background: linear-gradient(to left, #95106d, #5f1782);
+  /* transform: scale(1.1); */
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+  color: white;
+}
+.logo{
+  margin-left: 6%;
+}
+.logo h1 {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(black, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.contact-section {
+  padding: 150px 0 60px;
+}
+
+.contact-text-1 {
+  grid-column: span 4;
+  color: white;
+  /* align-self: center; */
+}
+
+.contact-text-1 {
+  background-color: purple;
+  padding: 50px 50px 0;
+}
+
+.contact-text-2 {
+  grid-column: span 8;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px silver;
+  /* align-self: center; */
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 15px;
+}
+
+.grid-1 .icon,
+.grid-2 .icon,
+.grid-3 .icon {
+  grid-column: span 1;
+}
+
+.grid-1 .text,
+.grid-2 .text,
+.grid-3 .text {
+  grid-column: span 11;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  column-gap: 15px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  column-gap: 15px;
+}
+
+.sub-heading {
+  line-height: 45px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-top: 70%;
+}
+
+.icons a img {
+  width: 100%;
+}
+
+.heading h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.heading p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  padding-bottom: 20px;
+}
+
+.sub-heading h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+
+.sub-heading p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.9875rem;
+}
+
+.sub-heading p a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-padding {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  height: auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.heading h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.input-control input {
+  width: 90%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 2px silver solid;
+}
+
+.input-control select {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px silver solid;
+  border-right: none;
+}
+
+#number {
+  border-left: none;
+  margin-left: -0.5%;
+  width: 70%;
+}
+
+#help {
+  padding: 50px;
+}
+
+#help::placeholder {}
+
+.input-control {
+  margin-bottom: 30px;
+}
+
+.input-control p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+
+.service-container {
+  margin-top: 5%;
+  line-height: 2;
+}
+
+.service-1 li,
+.service-2 li {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  display: flex;
+  gap: 10px;
+}
+
+.heading h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.button button {
+  background-color: purple;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  border: none;
+}
+
+.button button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
